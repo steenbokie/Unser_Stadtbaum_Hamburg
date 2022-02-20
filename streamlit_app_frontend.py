@@ -16,7 +16,7 @@ with open('startseite.md') as f:
     startseite = f.read()
 #picture ![Image_startseite](https://user-images.githubusercontent.com/93773591/154812307-9dece0db-b72d-466c-80c3-1d086f8a0978.jpg)
 #-------------------------------------------------------------------------------------------------------
-
+#load_data
 def load_data():
 
         data_baume = pd.read_csv('final_data_techlabs.csv', sep =';') #csv file einlesen und seperator angeben (hier semicolon, sonst komma)
@@ -52,7 +52,7 @@ def load_data():
 baume_df = load_data() #call funktion here
 
 #-------------------------------------------------------------------------------------------------------
-
+#sidebar 
 # with st.sidebar:
 #     selected = option_menu("Main Menu", ["Startseite", 'Dein Stadtbaum', 'Deine Map'],
 #         icons=['house', 'tree', 'circle'], menu_icon="cast", default_index=1)
@@ -61,7 +61,7 @@ baume_df = load_data() #call funktion here
 rad =st.sidebar.radio("Navigation",["Startseite","Dein Stadtbaum","Dein Stadtteil","Deine Map","Entdecke Hamburg", "Deine Story"])
 
 #-------------------------------------------------------------------------------------------------------
-
+#sidebar_navigation
 if rad == "Startseite": #verschiedene Sidebar Navigationspunkte und dessen Infos und funktionen
     #df = pd.DataFrame(data = data) # datenset definieren is not defined jet
     st.write("Herzlich Willkommen") #text für die Seite
@@ -78,7 +78,7 @@ if rad == "Startseite": #verschiedene Sidebar Navigationspunkte und dessen Infos
 
 
 #-------------------------------------------------------------------------------------------------------
-
+#sidebar_options #Dein Stadtbaum
 
 if rad == "Dein Stadtbaum": #verschiedene Sidebar Navigationspunkte und dessen Infos und funktionen
     #df = pd.DataFrame(data = data) # datenset definieren is not defined jet
@@ -101,14 +101,14 @@ if rad == "Dein Stadtbaum": #verschiedene Sidebar Navigationspunkte und dessen I
     st.write('Dir wird folgende Baumsorte angezeigt:',selction_baum)
 
 #-------------------------------------------------------------------------------------------------------
-
+#sidebar_options #Deine Map
 if rad == "Deine Map":
         st.write("Schau dich in Hamburg um und entdecke viele tolle Baumarten")
 
 
 
 #-------------------------------------------------------------------------------------------------------
-
+#sidebar_options #Dein Stadtteil
 if rad == "Dein Stadtteil":
                 st.write("Wähle deine Daten aus und finde heraus, welche Baumarten sich in deiner Gegend befinden")
 
@@ -119,7 +119,7 @@ if rad == "Dein Stadtteil":
 
 
 #-------------------------------------------------------------------------------------------------------
-
+#sidebar_options #Entdecke Hamburg
 
 if rad == "Entdecke Hamburg":
         st.write("Stelle dir dein ganz persönliches Datenset zusammen")
@@ -134,7 +134,7 @@ if rad == "Entdecke Hamburg":
         ['Yellow', 'Red'])
 
 #-------------------------------------------------------------------------------------------------------
-
+#sidebar_options #Deine Story
 
 if rad == "Deine Story":
                 text= st.sidebar.text_area("Erzähl uns deine Geschichte")
