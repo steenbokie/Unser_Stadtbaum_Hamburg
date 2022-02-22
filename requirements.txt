@@ -1,3 +1,9 @@
 pandas
+numpy
 seaborn
 matplotlib
+folium
+streamlit_folium
+plotly.figure_factory
+plotly.express
+plotly.graph_objects
