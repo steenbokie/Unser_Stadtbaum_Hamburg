@@ -3,6 +3,5 @@ numpy
 seaborn
 matplotlib
 folium
+plotly
 streamlit_folium
-plotly.express
-plotly.graph_objects
