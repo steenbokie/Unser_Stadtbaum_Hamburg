@@ -3,7 +3,7 @@ numpy
 seaborn
 matplotlib
 folium
-folium_static
+streamlit_folium
 plotly.figure_factory
 plotly.express
 plotly.graph_objects
