@@ -180,7 +180,6 @@ st.markdown("**Pie Chart   :cake:**")
 
 # df11 = baume_df.groupby('stadtteil')[['sorte_deutsch']].count()
 
-# # This dataframe has 244 lines, but 4 distinct values for `day`
 # fig = px.pie(data_frame = df11, values= 'sorte_deutsch' , names='stadtteil')
 
 # # Plot!
