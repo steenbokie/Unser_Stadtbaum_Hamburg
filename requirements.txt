@@ -1,3 +1,7 @@
 pandas
+numpy
 seaborn
 matplotlib
+folium
+plotly
+streamlit_folium

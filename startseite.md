@@ -1,7 +1,1 @@
-## Entdecke Hamburg  
-
-
-| Navigation      | Entdecke | Deine Funktion     |
-| :---        |    :----:   |          ---: |
-|  Dein Stadtteil     | Hier kannst du...       | Here's this   |
-| Deine Map   | Hier kannst du...        | And more      |
+![Image_startseite](https://user-images.githubusercontent.com/93773591/154812307-9dece0db-b72d-466c-80c3-1d086f8a0978.jpg)
