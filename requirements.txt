@@ -4,6 +4,7 @@ seaborn
 matplotlib
 folium
 streamlit_folium
+folium_static
 plotly.figure_factory
 plotly.express
 plotly.graph_objects
