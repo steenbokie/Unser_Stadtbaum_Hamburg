@@ -11,4 +11,6 @@ Diese App bietet Visualisierungen und Statistiken über Straßenbäume in Hambur
 
 This App provides visualizations and statistics about street trees in Hamburg, their age, and other parameters, with an interactive map to get the location and information about each tree.
 
-The dataset is available at [Transparenzportal Hamburg](https://suche.transparenz.hamburg.de/dataset/strassenbaumkataster-hamburg16?forceWeb=true) the UI of the app is german.
+The dataset is available at [Transparenzportal Hamburg](https://suche.transparenz.hamburg.de/dataset/strassenbaumkataster-hamburg16?forceWeb=true).
+
+The UI of the app is german.
