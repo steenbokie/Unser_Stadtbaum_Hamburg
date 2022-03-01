@@ -14,3 +14,8 @@ This App provides visualizations and statistics about street trees in Hamburg, t
 The dataset is available at [Transparenzportal Hamburg](https://suche.transparenz.hamburg.de/dataset/strassenbaumkataster-hamburg16?forceWeb=true).
 
 The UI of the app is german.
+
+[details="**Query tool  :wrench: :mailbox_with_mail: :house_with_garden:**"]
+
+We still challenge issues with our query tool with which you can find trees at a specific location (street +house number or coordinates). Feel free to fork our repo and take hands on the issue. :relaxed:
+[/details]
