@@ -16,7 +16,7 @@ The dataset is available at [Transparenzportal Hamburg](https://suche.transparen
 The UI of the app is german.
 
 <details>
-<summary>**Query tool  :wrench: :mailbox_with_mail: :house_with_garden:**</summary>
+<summary> #Query tool  :wrench: :mailbox_with_mail: :house_with_garden: </summary>
 <br>
 We still challenge issues with our query tool with which you can find trees at a specific location (street +house number or coordinates). Feel free to fork our repo and take hands on the issue. :relaxed:
 </details>
