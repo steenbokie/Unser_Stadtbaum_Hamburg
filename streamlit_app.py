@@ -6,7 +6,7 @@ import deine_plots
 import dein_stadtbaum
 import streamlit as st
 from streamlit_option_menu import option_menu
-
+from load_data import load_data
 
 baume_df = load_data()  # call function here
 
