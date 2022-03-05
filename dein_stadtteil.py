@@ -49,17 +49,35 @@ def app():
 #-------------------------------------------------------------------------------------------------------
             #Tool zur Abfrage der Bäume für Straße
 
-        st.header("Deine Baum :deciduous_tree:")
+        st.header("Dein Baum :deciduous_tree:")
         st.markdown("**Abfragetool: Welcher Baum steht in deiner Straße, bei deiner Hausnummer?   :wrench: :mailbox_with_mail: :house_with_garden:**")
 
-        street = st.text_input('Straße', 'Hafenstraße')
+
+        # the previous solution was pronoe to typos,
+        # now the user can start typing a street from the available in the DF
+        street_list = baume_df.strasse.unique().tolist() # get list of streets
+        street = st.selectbox('Gibt einen Straßennamen ein:', street_list)
         st.write('Die gewählte Straße ist: ', street)
 
-        number = st.number_input('Hausnummer', step=1)
-        st.write('Die gewählte Hausnummer ist: ', number)
+        # create a DF for the selected street and get the list of available 
+        # house numbers
+        street_df = baume_df[
+            baume_df["strasse"]== street]
+        streetnumb_list = street_df.hausnummer.unique().tolist()
 
+        number =  st.selectbox('Gibt einen einen Hausnummer ein:', streetnumb_list)
 
-        for street in baume_df.strasse:
-             print(baume_df['sorte_deutsch'][street], df['alter'][street])
+        # create a DF filtering with the street number combo
+        # I engourage you to learn more about filtering with pandas it's :fire:
+        selected_baum_df = baume_df[(
+            baume_df["strasse"]== street) & (
+                baume_df["hausnummer"]== number)]
 
-        #     {row['art_deutsch']}, Pflanzjahr: {row['pflanzjahr']}, Alter des Baumes: {row['alter']}
+        # get the final list of trees for the given adress
+        trees_list = str(selected_baum_df.art_deutsch.unique().tolist())
+        # TODO: join* this list into a more beautiful string
+
+        # print the final message with string formating 
+        st.markdown(f'''Deine Bäume in **{street} {number}**:
+          {trees_list}''')
+        # TODO: show this info more beautiful with markdown or any other approach :) 
